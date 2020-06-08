@@ -1,0 +1,188 @@
+// 导航栏
+.navbar {
+    background: #000000;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    color: #ffffff;
+    white-space: nowrap;
+    cursor: pointer;
+
+    .navright {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+
+        a {
+            color: #ffffff;
+            font-size: 14px;
+            white-space: nowrap;
+
+            &.active {
+                color: #f60
+            }
+        }
+    }
+
+}
+
+// logo
+nav {
+    background: #F8F8F8;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        white-space: nowrap;
+
+
+        .lid {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            white-space: nowrap;
+
+            a {
+                line-height: 60px;
+                color: #000;
+                font-size: 16px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #f60;
+                }
+            }
+        }
+    }
+}
+
+// 账户信息
+.pop-finor {
+ 
+
+    .finor {
+        display: flex;
+        padding-bottom: 50px;
+        height: 530px;
+        user-select: none;
+
+        .finor-left {
+            flex: 4;
+
+            .card {
+                display: flex;
+                border-radius: 0;
+
+                .card-header {
+                    border: none;
+                }
+
+                .finer {
+                    div {
+                        &.active {
+                            a {
+                                color: #f60;
+                            }
+
+                            cursor: pointer;
+                            background: #337AB7;
+
+                        }
+                    }
+
+                }
+
+                .finh {
+                    div {
+                        height: 40px;
+                        font-size: 16px;
+                        text-align: center;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+        }
+        .accont {
+            display: flex;
+            flex: 6;
+            .finor-two {
+                justify-content: center;
+                padding-bottom: 20px;
+                flex: 6;
+                margin-left: 30px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+
+                .fin1 {
+                    background: #F5F5F5;
+                    display: block;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 18px;
+                    text-indent: 5px;
+                }
+
+                .fin2 {
+                    text-align: center;
+                    height: 30px;
+                    line-height: 30px;
+                    margin-left: -20px;
+                    color: #D9534F;
+                }
+
+                form {
+                    width: 500px;
+                    margin: 0 auto;
+
+                    div {
+                        display: flex;
+                        height: 30px;
+
+                        small {
+                            line-height: 30px;
+                            height: 30px;
+                        }
+
+                        label {
+                            line-height: 30px;
+                            height: 30px;
+                        }
+
+                    }
+                }
+
+                select {
+                    width: 300px;
+                    margin: 0 10px;
+                    height: 30px;
+                    font-size: 12px;
+                }
+
+                input {
+                    width: 300px;
+                    margin: 0 10px;
+                    height: 30px;
+                }
+
+                .buttond {
+                    text-align: center;
+
+                    .btn {
+                        height: 30px;
+                        width: 90px !important;
+                        line-height: 20px;
+                        font-size: 14px;
+
+                        margin: 0 auto !important;
+
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}

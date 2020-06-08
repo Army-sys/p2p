@@ -1,0 +1,190 @@
+// 导航栏
+.navbar {
+    background: #000000;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    color: #ffffff;
+    white-space: nowrap;
+    cursor: pointer;
+
+    .navright {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+
+        a {
+            color: #ffffff;
+            font-size: 14px;
+            white-space: nowrap;
+
+            &.active {
+                color: #f60
+            }
+        }
+    }
+
+}
+
+// logo
+nav {
+    background: #F8F8F8;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        white-space: nowrap;
+
+
+        .lid {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            white-space: nowrap;
+
+            a {
+                line-height: 60px;
+                color: #000;
+                font-size: 16px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #f60;
+                }
+            }
+        }
+    }
+}
+
+// 账户信息
+.pop-finor {
+    display: flex;
+
+    .finor {
+        display: flex;
+        padding-bottom: 50px;
+        height: 530px;
+        user-select: none;
+
+        .finor-left {
+            flex: 4;
+            
+            .card {
+                display: flex;
+                border-radius: 0;
+
+                .rep{
+                     div{
+                         &.active{
+                            a {
+                                color: #f60;
+                            }
+
+                            cursor: pointer;
+                            background: #337AB7;
+                         }
+                     }
+                }
+                .card-header {
+                    border: none;
+                }
+
+                .finer {
+                    div {
+                        &.active {
+                            a {
+                                color: #f60;
+                            }
+
+                            cursor: pointer;
+                            background: #337AB7;
+
+                        }
+                    }
+
+                }
+
+                .finh {
+                    div {
+                        height: 40px;
+                        font-size: 16px;
+                        text-align: center;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+        }
+
+        .finor-right {
+
+            .finle {
+                display: none;
+
+                &.active {
+                    display: block;
+
+                    table {
+                        border: 1px solid #cccccc;
+        
+                        .trd {
+                            display: inline-block;
+                            width: 15px;
+                            height: 15px;
+                            background: #337AB7;
+                            text-align: center;
+                            line-height: 15px;
+                            color: #ffffff;
+                        }
+        
+                        .tdr {
+                            color: #777777;
+                        }
+                    }
+        
+
+                }
+
+                flex: 6;
+            }
+            .finl {
+                display: none;
+
+                &.active {
+                    display: block;
+
+                    table {
+                        border: 1px solid #cccccc;
+        
+                        .trd {
+                            display: inline-block;
+                            width: 15px;
+                            height: 15px;
+                            background: #337AB7;
+                            text-align: center;
+                            line-height: 15px;
+                            color: #ffffff;
+                        }
+        
+                        .tdr {
+                            color: #777777;
+                        }
+                    }
+        
+
+                }
+
+                flex: 6;
+            }
+            
+            flex: 6;
+            font-size: 12px;
+            margin-left: 20px;
+
+           
+
+        }
+
+    }
+}

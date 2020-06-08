@@ -1,10 +1,9 @@
-@import "./jn.less";
-@import "./var.less";
+
 
 // 导航栏
 .navbar {
     background: #000000;
-    .flexd();
+    display:flex;
     justify-content: space-around;
     flex-direction: row;
     color: #ffffff;
@@ -28,7 +27,7 @@
 
     >div {
         ul {
-            .flexd();
+            display:flex;
             flex-direction: row;
             white-space: nowrap;
         }
@@ -38,13 +37,13 @@
 
 // logo
 .logo {
-    .flexd();
+    display:flex;
     flex-direction: row;
     margin-top: 10px;
     white-space: nowrap;
 
     .lid {
-        .flexd();
+        display:flex;
         flex-direction: row;
         margin-left: 20px;
         white-space: nowrap;
@@ -64,10 +63,6 @@
 
 // 轮播图
 
-.lu {
-    padding: none;
-}
-
 .carousel-indicators li {
     height: 15px;
     width: 20px;
@@ -77,16 +72,16 @@
 
 //投资理财
 .loan {
-    .flexd();
+    display:flex;
     justify-content: space-between;
     margin-top: 20px;
 
     div {
-        .flexd();
+        display:flex;
         flex-direction: row;
 
         div {
-            .flexd();
+            display:flex;
             flex-direction: column;
             align-self: center;
 
@@ -109,7 +104,7 @@
     }
 
     margin-top: 10px;
-    .flexd();
+    display:flex;
     justify-content: space-around;
 
     .p1 {
@@ -156,7 +151,7 @@
     .imge {
         width: 100%;
         height: 220px;
-        .flexd();
+        display:flex;
         flex-direction: column;
         justify-content: flex-start;
 
@@ -188,7 +183,7 @@
 
 .case {
     padding-top: 30px;
-    .flexd();
+    display:flex;
 
     .caseleft {
         display: flex;
@@ -251,7 +246,7 @@
 
     .caseright {
         height: 270px;
-        .flexd();
+        display:flex;
         flex: 4;
         margin-left: 30px;
         background-color: #fff;
@@ -259,7 +254,7 @@
         .caser {
             >p {
                 width: 400px;
-                .flexd();
+                display:flex;
                 justify-content: flex-start;
                 font-size: 20px;
                 font-weight: bold;
@@ -274,7 +269,7 @@
                     font-size: 16px;
 
                     width: 400px;
-                    .flexd();
+                    display:flex;
                     justify-content: space-between;
                     height: 30px;
                     line-height: 30px;
@@ -311,12 +306,12 @@
     justify-content: space-around;
 
     .pusd {
-        .flexd();
+        display:flex;
         justify-content: space-between;
 
         // 左边
         .pule {
-            .flexd();
+            display:flex;
             flex: 3;
             justify-content: space-between;
             margin-top: 20px;
@@ -325,7 +320,7 @@
         }
         //  中间
         .puco {
-            .flexd();
+            display:flex;
             flex: 3;
             flex-direction: column;
             justify-content: center;
@@ -340,7 +335,7 @@
             }
 
             .pucod {
-                .flexd();
+                display:flex;
                 justify-content: space-between;
                 margin-top: 20px;
 
@@ -367,7 +362,7 @@
         }
     //    右边
         .puri {
-            .flexd();
+            display:flex;
             flex: 3;
             flex-direction: column;
             align-items: center;
@@ -382,39 +377,3 @@
 
 }
 
-// 底部商标
-footer{
-    height: 100px;
-    background: #292929;
-    .flexd();
-    align-items: center;
-    div{
-        .flexd();
-        justify-content: center;
-        .d1{
-        height: 50px;
-        width: 114px;
-         background: url(../../images/jl.png) no-repeat;
-         background-position: 7px -58px;
-    }
-    .d2{
-        height: 48px;
-        width: 110px;
-         background:url(../../images/jl.png) no-repeat;
-         background-position: 8px -106px;
-    }
-    .d3{
-        height: 46px;
-        width: 110px;
-         background: url(../../images/jl.png) no-repeat;
-         background-position: 7px -152px;
-    }
-    .d4{
-        height: 50px;
-        width: 100px;
-         background: url(../../images/jl.png) no-repeat;
-         background-position: -106px -58px;
-    }
-    }
-    
-}

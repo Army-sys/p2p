@@ -1,0 +1,122 @@
+// 导航栏
+.navbar {
+    background: #000000;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    color: #ffffff;
+    white-space: nowrap;
+    cursor: pointer;
+
+    .navright {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+
+        a {
+            color: #ffffff;
+            font-size: 14px;
+            white-space: nowrap;
+
+            &.active {
+                color: #f60
+            }
+        }
+    }
+
+}
+
+// logo
+nav {
+    background: #F8F8F8;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        white-space: nowrap;
+
+
+        .lid {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            white-space: nowrap;
+
+            a {
+                line-height: 60px;
+                color: #000;
+                font-size: 16px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #f60;
+                }
+            }
+        }
+    }
+}
+
+.borrow {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .boul {
+        display: flex;
+        justify-content: space-between;
+
+        .bolile {
+            background: #F9F9F9;
+            flex: 2;
+            margin: 0 20px;
+
+            h1 {
+                background: #40D47E;
+                font-size: 22px;
+                height: 50px;
+                line-height: 50px;
+                text-indent: 10px;
+                margin-bottom: 10px;
+                color: #ffffff;
+            }
+
+            p {
+                height: 30px;
+            }
+
+            .data {
+                .b1 {
+                    background: url(../../images/sequare.png)no-repeat;
+                    text-indent: 20px;
+                }
+
+                .b2 {
+                    background: url(../../images/sequare.png)no-repeat;
+                    text-indent: 20px;
+                }
+
+                .b3 {
+                    background: url(../../images/sequare.png)no-repeat;
+                    text-indent: 20px;
+                }
+            }
+
+            .apply {
+                text-align: center;
+                margin-bottom: 20px;
+                cursor: pointer;
+
+                span {
+                    display: inline-block;
+                    ;
+                    width: 80px;
+                    height: 30px;
+                    line-height: 30px;
+                    background: #00A8FF;
+                    border-radius: 5px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}

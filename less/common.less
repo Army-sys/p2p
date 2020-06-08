@@ -8,6 +8,52 @@
 .f0{
     background: #F0F0F0;
 }
+.f5{
+    background: #F5F5F5;
+}
+// 加粗
+.wb{
+    font-weight: bolder;
+}
+// 字体颜色
+.c0{
+    color: #ccc;
+}
+.cf{
+    color: #ff6600;
+}
+.f9{
+    color: rgb(112, 199, 12);
+}
+
+// 居中
+.tcon{
+    text-align: center;
+}
+// 内边距
+.ml20{
+    margin-left: 20px;
+}
+// 字体
+.f14{
+    font-size: 14px;
+}
+.f16l{
+    font-size: 16px;
+}
+.f18{
+    font-size: 18px;
+}
+.f20{
+    font-size: 20px;
+}
+.f22{
+    font-size: 20px;
+}
+// 加粗
+.bl{
+    font-weight: bolder;
+}
 // 版心 
 .container {
     width: 1200px;
@@ -33,7 +79,138 @@
     
 
 }
+.brt{
+    border-top-left-radius: 5px;
+}
+.brb{
+    border-bottom-left-radius: 5px;
+}
+.bri{
+    border-top-right-radius: 5px;
+}
+.brr{
+    border-bottom-right-radius: 5px;
+}
 .h10{
     height: 50px;
+    
+}
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    padding: 0;
+}
+
+// 尾部
+.push {
+    
+    background: #333333;
+    color: #fff;
+   
+    justify-content: space-around;
+
+    .pusd {
+        display: flex;
+        justify-content: space-between;
+
+        // 左边
+        .pule {
+            display:flex;
+            flex: 3;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 16px;
+
+        }
+        //  中间
+        .puco {
+            display:flex;
+            flex: 3;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px 50px;
+
+
+            p {
+                font-size: 16px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center
+            }
+
+            .pucod {
+                display:flex;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                .pucole {
+                    text-align: center;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+
+                }
+            }
+
+            .pucori {
+                text-align: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    //    右边
+        .puri {
+            display:flex;
+            flex: 3;
+            flex-direction: column;
+            align-items: center;
+              margin-top: 50px;
+
+
+        }
+
+
+
+    }
+
+}
+// 底部商标
+footer{
+    height: 100px;
+    background: #292929;
+    display:flex;
+    align-items: center;
+    div{
+        display:flex;
+        justify-content: center;
+        .d1{
+        height: 50px;
+        width: 114px;
+         background: url(../../images/jl.png) no-repeat;
+         background-position: 7px -58px;
+    }
+    .d2{
+        height: 48px;
+        width: 110px;
+         background:url(../../images/jl.png) no-repeat;
+         background-position: 8px -106px;
+    }
+    .d3{
+        height: 46px;
+        width: 110px;
+         background: url(../../images/jl.png) no-repeat;
+         background-position: 7px -152px;
+    }
+    .d4{
+        height: 50px;
+        width: 100px;
+         background: url(../../images/jl.png) no-repeat;
+         background-position: -106px -58px;
+    }
+    }
     
 }

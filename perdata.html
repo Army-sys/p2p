@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账户信息</title>
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="./lib/bootstrap4/css/bootstrap.min.css">
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="./dist/css/reset.min.css">
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="./dist/css/common.min.css">
+    <!-- 引入网页样式 -->
+    <link rel="stylesheet" href="./dist/css/perdate.min.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="navbar container-fluid">
+        <div class=" container ">
+            <ul class="navright">
+                <li class=" active">
+                    <a class="nav-link" href="index.html">首页 </a>
+                </li>
+
+                <li>
+                    <a class="nav-link active" href="#">账户</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">账户充值</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">注销</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">帮助</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+    <!-- logo -->
+    <nav class="nav container-fluid">
+        <div class="container logo">
+            <div>
+                <img src="./images/logo .png" alt="">
+            </div>
+            <div class="lid">
+                <a class="nav-link active" href="index.html">首页</a>
+                <a class="nav-link" href="invest.html">我要投资</a>
+                <a class="nav-link" href="want-borrow.html">我要借贷</a>
+                <a class="nav-link" href="per-conter.html">个人中心</a>
+                <a class="nav-link" href="#">联系客服</a>
+            </div>
+    </nav>
+
+    <!-- 账户信息 -->
+    <main class="pop-finor container-fluid">
+        <div class="finor container">
+            <div class="accordion finor-left " id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <a href="#">投资项目</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <a href="./loan.html">借款项目</a> 
+                        </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse finh" aria-labelledby="headingTwo"
+                        data-parent="#accordionExample">
+
+                        <div><a href="loan.html">借款明细</a></div>
+                        <div><a href="#">还款明细</a></div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo1">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                            <a href="./per-conter.html">我的账户</a>
+                        </button>
+                    </div>
+                    <div id="collapseTwo1" class="collapse finh finer" aria-labelledby="headingTwo1"
+                        data-parent="#accordionExample">
+                        <div class="active" id="inf"> <a href="#">账户信息</a></div>
+                        <div> <a href="#">实名认证</a></div>
+                        <div><a href="#">银行卡管理</a> </div>
+                        <div> <a href="#">实名信息</a></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo2">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false"
+                                aria-controls="collapseTwo2">
+                                <a href="assdet.html">资产详情</a>
+                            </button>
+                        </div>
+                        <div id="collapseTwo2" class="collapse finh" aria-labelledby="headingTwo2"
+                            data-parent="#accordionExample">
+                            <div> <a href="./assdet.html">账户流水</a></div>
+                            <div> <a href="#">充值明细</a></div>
+                            <div> <a href="#">体现记录</a></div>
+                            <div> <a href="#">收款明细</a></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                <a href="./perdata.html">个人资料</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accont">
+                 <div class="finor-two">
+                     <div class="fin1">个人资料</div>
+                     
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">用&nbsp;户&nbsp;&nbsp;名</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="xiaoq" style="border:none;">
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">真实姓名</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="小强" style="border:none;">
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">证件号码</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="515**********54165" style="border:none;">
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">手机号码</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                            
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">联系电话</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                            
+                          </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">个人学历</label>
+                            <select type="text" class="form-control" list="sex" id="exampleInputEmail1" aria-describedby="emailHelp"style="width:200px;">
+                                <option value="#">初中</option>
+                                <option value="#">高中/中专</option>
+                                <option value="#">专科</option>
+                                <option value="#">本科</option>
+                                <option value="#">硕士研究生</option>
+                                <option value="#">博士研究生</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">个人收入</label>
+                            <select type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"style="width:200px;">
+                                <option value="#">1000元以下</option>
+                            <option value="#">1000元-1999元</option>
+                            <option value="#">2000元-2999元</option>
+                            <option value="#">3000元-4999元</option>
+                            <option value="#">5000元-8999元</option>
+                            <option value="#">10000元以上</option>
+                            
+                            </select>
+                            
+                          </div>
+                         
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">联系地址</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="width:400px;">
+                          </div>
+
+                           <div class="buttond">
+                                <button type="submit" class="btn btn-primary">提交认证</button>
+                           </div>
+                           
+                      
+                        
+                      </form>
+                 </div>
+            </div>
+
+    </main>
+
+    <!-- 底部 -->
+    <section class="push container-fluid">
+        <div class="container pusd">
+            <div class="pule">
+                <ul>
+                    <li>关于宜贷</li>
+                    <li>关于宜贷</li>
+                    <li>关于宜贷</li>
+                    <li>关于宜贷</li>
+                    <li>关于宜贷</li>
+                </ul>
+                <ul>
+                    <li>宜贷风采</li>
+                    <li>宜贷风采</li>
+                    <li>宜贷风采</li>
+                    <li>宜贷风采</li>
+                    <li>宜贷风采</li>
+                </ul>
+                <ul>
+                    <li>新手上路</li>
+                    <li>新手上路</li>
+                    <li>新手上路</li>
+                    <li>新手上路</li>
+                </ul>
+            </div>
+
+            <div class="puco">
+                <p>关注我们：宜贷与你快乐分享</p>
+                <div class="pucod">
+                    <div class="pucole">
+                        <img src="./images/q1.jpg" alt="">
+                        <p>官方微信：宜贷网</p>
+                    </div>
+                    <div class="pucori">
+                        <img src="./images/q2.jpg" alt="">
+                        <p>官方APP：宜贷网</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="puri">
+                <p>公司地址：上海市嘉定区银翔路819号中暨大厦10楼1006室</p>
+                <p>运营中心：成都市锦江区东华正街42号广电仕百达国际大厦5楼（四川分公司</p>
+                <p>邮编：610066 Email：mail@yidai.com</p>
+                <p>上海易贷网金融信息服务有限公司　沪ICP备15020893号-1</p>
+                <p>Copyright©2014-2018 Shanghai Yidai Co.,Ltd.All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 商标 -->
+    <footer class=" container-fluid">
+        <div class="container">
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d4"></div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap4/js/bootstrap.min.js"></script>
+<script src="./lib/echarts/echarts.min.js"></script>
+<script src="/lib/popper/popper.min.js"></script>
+<script src="./dist/js/perdata.min.js"></script>
