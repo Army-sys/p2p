@@ -59,7 +59,7 @@ nav {
 
 // 账户信息
 .pop-finor {
- 
+
 
     .finor {
         display: flex;
@@ -92,7 +92,30 @@ nav {
                     }
 
                 }
+                .rep{
+                    div{
+                        &.active{
+                           a {
+                               color: #f60;
+                           }
 
+                           cursor: pointer;
+                           background: #337AB7;
+                        }
+                    }
+               }
+                .flo{
+                div{
+                    &.active{
+                       a {
+                           color: #f60;
+                       }
+
+                       cursor: pointer;
+                       background: #337AB7;
+                    }
+                }
+           }
                 .finh {
                     div {
                         height: 40px;
@@ -104,202 +127,439 @@ nav {
             }
 
         }
-        .accont {
-            display: flex;
-            flex: 6;
 
-            .finor-right {
-                box-sizing: border-box;
+        .accright {
+
+            flex: 6;
+            display: flex;
+
+            .accont {
                 display: none;
+                flex: 1;
 
                 &.active {
                     display: block;
                 }
 
-                flex: 6;
-                margin-left: 30px;
-                border: 1px solid #ccc;
-                padding: 10px 10px;
+                .finor-right {
+                    box-sizing: border-box;
+                    display: none;
 
-                .finortop {
-                    display: flex;
-                    padding-bottom: 20px;
-                    border-bottom: 1px solid #ccc;
-
-                    img {
-                        height: 80px;
-                        width: 80px;
-                        border: 1px solid #000;
-                        padding: 10px 10px;
+                    &.active {
+                        display: block;
                     }
 
-                    div {
-                        margin-left: 20px;
-                        font-size: 16px;
-                    }
+                    flex: 6;
+                    margin-left: 30px;
+                    border: 1px solid #ccc;
+                    padding: 10px 10px;
 
-                }
-
-                .finorcenter {
-                    .finc {
+                    .finortop {
                         display: flex;
-                        justify-content: space-around;
-                        font-size: 20px;
-                        margin: 10px 0;
-
-                        span {
-                            color: #f60;
-                        }
-                    }
-
-                    .finb {
-                        display: flex;
-                        justify-content: center;
-
-                        p {
-                            margin-left: 10px;
-                            font-size: 18px;
-                            background: #ffffff;
-                            border-radius: 5px;
-                            text-align: center;
-                            line-height: 40px;
-
-                            &:first-child {
-                                background: #337AB7;
-                                width: 100px;
-                                height: 40px;
-                            }
-
-                            &:last-child {
-                                background: #D9534F;
-                                width: 100px;
-                                height: 40px;
-                            }
-                        }
-                    }
-                }
-
-                .finorbut {
-                    margin-top: 20px;
-
-                    ul {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                        border-bottom: 1px solid #ccc;
                         padding-bottom: 20px;
+                        border-bottom: 1px solid #ccc;
 
-                        li {
+                        img {
+                            height: 80px;
+                            width: 80px;
+                            border: 1px solid #000;
+                            padding: 10px 10px;
+                        }
+
+                        div {
+                            margin-left: 20px;
+                            font-size: 16px;
+                        }
+
+                    }
+
+                    .finorcenter {
+                        .finc {
                             display: flex;
-                            flex-direction: column;
-                            font-size: 12px;
+                            justify-content: space-around;
+                            font-size: 20px;
+                            margin: 10px 0;
 
-
-                            .butt {
-                                padding-top: 10px;
-                                margin-bottom: 20px;
-
-                                div {
-                                    margin-left: 10px;
-                                }
-
-                                p {
-                                    height: 20px;
-                                    line-height: 20px;
-
-                                    a {
-                                        font-size: 12px;
-                                    }
-                                }
-
-                                display: flex;
-
+                            span {
+                                color: #f60;
                             }
                         }
 
+                        .finb {
+                            display: flex;
+                            justify-content: center;
+
+                            p {
+                                margin-left: 10px;
+                                font-size: 18px;
+                                background: #ffffff;
+                                border-radius: 5px;
+                                text-align: center;
+                                line-height: 40px;
+
+                                &:first-child {
+                                    background: #337AB7;
+                                    width: 100px;
+                                    height: 40px;
+                                }
+
+                                &:last-child {
+                                    background: #D9534F;
+                                    width: 100px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+
+                    .finorbut {
+                        margin-top: 20px;
+
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            border-bottom: 1px solid #ccc;
+                            padding-bottom: 20px;
+
+                            li {
+                                display: flex;
+                                flex-direction: column;
+                                font-size: 12px;
+
+
+                                .butt {
+                                    padding-top: 10px;
+                                    margin-bottom: 20px;
+
+                                    div {
+                                        margin-left: 10px;
+                                    }
+
+                                    p {
+                                        height: 20px;
+                                        line-height: 20px;
+
+                                        a {
+                                            font-size: 12px;
+                                        }
+                                    }
+
+                                    display: flex;
+
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+                .finor-two {
+                    display: none;
+                    flex: 1;
+
+                    &.active {
+                        display: block;
+                    }
+
+                    justify-content: center;
+                    padding-bottom: 20px;
+                    margin-left: 30px;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+
+                    .fin1 {
+                        background: #F5F5F5;
+                        height: 20px;
+                    }
+
+                    .fin2 {
+                        text-align: center;
+                        height: 30px;
+                        line-height: 30px;
+                        margin-left: -20px;
+                        color: #D9534F;
+                    }
+
+                    form {
+                        width: 500px;
+                        margin: 0 auto;
+
+                        div {
+                            display: flex;
+                            height: 30px;
+
+                            small {
+                                line-height: 30px;
+                                height: 30px;
+                            }
+
+                            label {
+                                line-height: 30px;
+                                height: 30px;
+                            }
+
+                        }
+                    }
+
+                    select {
+                        width: 300px;
+                        margin: 0 10px;
+                        height: 30px;
+                        font-size: 12px;
+                    }
+
+                    input {
+                        width: 300px;
+                        margin: 0 10px;
+                        height: 30px;
+                    }
+
+                    .buttond {
+                        text-align: center;
+
+                        .btn {
+                            height: 30px;
+                            width: 90px !important;
+                            line-height: 20px;
+                            font-size: 14px;
+
+                            margin: 0 auto !important;
+
+
+                        }
                     }
 
                 }
             }
 
-            .finor-two {
-                display: none;
-
+            .finor-rightd {
                 &.active {
                     display: block;
                 }
 
-                justify-content: center;
-                padding-bottom: 20px;
+                display: none;
+
+                .finle {
+                    display: none;
+
+                    &.active {
+                        display: block;
+
+                        table {
+                            border: 1px solid #cccccc;
+
+                            .trd {
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                background: #337AB7;
+                                text-align: center;
+                                line-height: 15px;
+                                color: #ffffff;
+                            }
+
+                            .tdr {
+                                color: #777777;
+                            }
+                        }
+
+
+                    }
+
+                    flex: 6;
+                }
+
+                .finl {
+                    display: none;
+
+                    &.active {
+                        display: block;
+
+                        table {
+                            border: 1px solid #cccccc;
+
+                            .trd {
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                background: #337AB7;
+                                text-align: center;
+                                line-height: 15px;
+                                color: #ffffff;
+                            }
+
+                            .tdr {
+                                color: #777777;
+                            }
+                        }
+
+
+                    }
+
+                    flex: 6;
+                }
+
                 flex: 6;
-                margin-left: 30px;
-                border: 1px solid #ccc;
+                font-size: 12px;
+                margin-left: 20px;
+
+
+
+            }
+
+            .assdet-right {
+                display: none;
+                &.active{
+                    display: block;
+                }
                 box-sizing: border-box;
-
-                .fin1 {
-                    background: #F5F5F5;
-                    height: 20px;
-                }
-
-                .fin2 {
-                    text-align: center;
-                    height: 30px;
-                    line-height: 30px;
-                    margin-left: -20px;
-                    color: #D9534F;
-                }
-
-                form {
-                    width: 500px;
-                    margin: 0 auto;
-
-                    div {
-                        display: flex;
-                        height: 30px;
-
-                        small {
-                            line-height: 30px;
-                            height: 30px;
+                .finled {
+                    display: none;
+                    &.active {
+                        display: block;
+    
+                        table {
+                            border: 1px solid #cccccc;
+            
+                            .trd {
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                background: #337AB7;
+                                text-align: center;
+                                line-height: 15px;
+                                color: #ffffff;
+                            }
+            
+                            .tdr {
+                                color: #777777;
+                            }
                         }
-
-                        label {
-                            line-height: 30px;
-                            height: 30px;
+            
+    
+                    }
+    
+                    flex: 6;
+                }
+                .finl {
+                    display: none;
+                    
+                    &.active {
+                        display: block;
+    
+                        table {
+                            border: 1px solid #cccccc;
+                             
+                            
+            
+                            .tdr {
+                                color: #777777;
+                            }
                         }
-
+            
+    
                     }
+    
+                    flex: 6;
                 }
+                
+                flex: 6;
+                font-size: 12px;
+                margin-left: 20px;
+    
+               
+    
+            }
 
-                select {
-                    width: 300px;
-                    margin: 0 10px;
-                    height: 30px;
-                    font-size: 12px;
+            .acconted {
+                display: none;
+                &.active{
+                    display: block;
                 }
-
-                input {
-                    width: 300px;
-                    margin: 0 10px;
-                    height: 30px;
-                }
-
-                .buttond {
-                    text-align: center;
-
-                    .btn {
+                flex: 6;
+                .finor-tw {
+                    &.active{
+                        display: block;
+                    }
+                    justify-content: center;
+                    padding-bottom: 20px;
+                  
+                    margin-left: 30px;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+    
+                    .fin1 {
+                        background: #F5F5F5;
+                        display: block;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 18px;
+                        text-indent: 5px;
+                    }
+    
+                    .fin2 {
+                        text-align: center;
                         height: 30px;
-                        width: 90px !important;
-                        line-height: 20px;
-                        font-size: 14px;
-
-                        margin: 0 auto !important;
-
-
+                        line-height: 30px;
+                        margin-left: -20px;
+                        color: #D9534F;
                     }
+    
+                    form {
+                        width: 500px;
+                        margin: 0 auto;
+    
+                        div {
+                            display: flex;
+                            height: 30px;
+    
+                            small {
+                                line-height: 30px;
+                                height: 30px;
+                            }
+    
+                            label {
+                                line-height: 30px;
+                                height: 30px;
+                            }
+    
+                        }
+                    }
+    
+                    select {
+                        width: 300px;
+                        margin: 0 10px;
+                        height: 30px;
+                        font-size: 12px;
+                    }
+    
+                    input {
+                        width: 300px;
+                        margin: 0 10px;
+                        height: 30px;
+                    }
+    
+                    .buttond {
+                        text-align: center;
+    
+                        .btn {
+                            height: 30px;
+                            width: 90px !important;
+                            line-height: 20px;
+                            font-size: 14px;
+    
+                            margin: 0 auto !important;
+    
+    
+                        }
+                    }
+    
                 }
-
             }
         }
+
 
     }
 }

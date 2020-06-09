@@ -4,96 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我要投资</title>
+    <title>注册</title>
+    <!-- 引入bootstrap -->
     <link rel="stylesheet" href="./lib/bootstrap4/css/bootstrap.min.css">
-    <!-- 重置样式 -->
+    <!-- 引入重置样式 -->
     <link rel="stylesheet" href="./dist/css/reset.min.css">
-    <!-- 公共样式 -->
+    <!-- 引入公共样式 -->
     <link rel="stylesheet" href="./dist/css/common.min.css">
-    <!-- 本页样式 -->
-    <link rel="stylesheet" href="./dist/css/invest.min.css">
+    <!-- 引入网页样式 -->
+    <link rel="stylesheet" href="./dist/css/register.min.css">
 </head>
 
 <body>
-     <!-- 导航 -->
-  <nav class="navbar container-fluid">
-    <div class=" container ">
-        <ul class="navright">        
-          <li class=" active">
-            <a class="nav-link" href="#">首页 </a>
-          </li>
+    <!-- 导航 -->
+    <nav class="navbar container-fluid">
+        <div class=" container ">
+            <ul class="navright">
+                <li class=" active">
+                    <a class="nav-link" href="index.html">首页 </a>
+                </li>
 
-          <li>
-            <a class="nav-link active" href="./sign.html">登录</a>
-          </li>
-          <li>
-            <a class="nav-link" href="./register.html">注册</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">账户充值</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#">帮助</a>
-          </li>
-        </ul>
-
-    </div>
-
-
-  </nav>
-
-  <!-- logo -->
-  <nav class="nav container-fluid">
-    <div class="container logo">
-      <div>
-        <img src="./images/logo .png" alt="">
-      </div>
-      <div class="lid">
-        <a class="nav-link active" href="index.html">首页</a>
-        <a class="nav-link" href="invest.html">我要投资</a>
-        <a class="nav-link" href="want-borrow.html">我要借贷</a>
-        <a class="nav-link" href="per-conter.html">个人中心</a>
-        <a class="nav-link" href="#">联系客服</a>
-      </div>
-  </nav>
-  <!-- 投资列表Invelist -->
-  <main class="container-fluid">
-      <div class="container invertop">
-        <p>投资列表</p>
-        <div>
-            <p>标的状态</p> 
-            <ul>
-                <li class="active brt brb">全部</li>
-                <li>招标中</li>
-                <li class="bri brr">还款中</li>
+                <li>
+                    <a class="nav-link active" href="#">登录</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">注册</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">账户充值</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">帮助</a>
+                </li>
             </ul>
+
         </div>
-        <table class="table collspacing = 0">
-            <thead>
-              <tr class="tr1">
-                <th scope="col">借款人</th>
-                <th scope="col">借款标题</th>
-                <th scope="col">年利率</th>
-                <th scope="col">金额</th>
-                <th scope="col">还款方式</th>
-                <th scope="col">进度</th>
-                <th scope="col">操作</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">zs</th>
-                <td>给我2000度过难关</td>
-                <td>10.00%</td>
-                <td>2,000.00</td>
-                <td>按月分期还款</td>
-                <td>100.00%</td>
-                <td><input class="inp" type="submit" value="查看" ></td>
-              </tr>
-            </tbody>
-          </table>
-      </div>
-  </main>
+
+
+    </nav>
+    <main class="register">
+        <div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class=" f16">用户名</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class=" f16">密码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="f16">确认密码</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="buttond">
+                    <button type="submit" class="btn btn-primary">同意协议并注册</button>
+                    <p>
+                        <a href="#">&lt;&lt;使用协议书&gt;&gt;</a> 
+                        <a href="./sign.html">已有账号,马上登录</a>
+                    </p>
+                </div>
+
+        </div>
+    </main>
 
     <!-- 底部 -->
     <section class="push container-fluid">
@@ -162,4 +135,4 @@
 <script src="./lib/bootstrap4/js/bootstrap.min.js"></script>
 <script src="./lib/echarts/echarts.min.js"></script>
 <script src="/lib/popper/popper.min.js"></script>
-<script src="./dist/js/invest.min.js"></script>
+<script src="./dist/js/register.min.js"></script>
