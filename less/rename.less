@@ -1,0 +1,113 @@
+.finor-right {
+    box-sizing: border-box;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    flex: 6;
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+
+    .finortop {
+        display: flex;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+
+        img {
+            height: 80px;
+            width: 80px;
+            border: 1px solid #000;
+            padding: 10px 10px;
+        }
+
+        div {
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+    }
+
+    .finorcenter {
+        .finc {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            margin: 10px 0;
+
+            span {
+                color: #f60;
+            }
+        }
+
+        .finb {
+            display: flex;
+            justify-content: center;
+
+            p {
+                margin-left: 10px;
+                font-size: 18px;
+                background: #ffffff;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 40px;
+
+                &:first-child {
+                    background: #337AB7;
+                    width: 100px;
+                    height: 40px;
+                }
+
+                &:last-child {
+                    background: #D9534F;
+                    width: 100px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .finorbut {
+        margin-top: 20px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+
+
+                .butt {
+                    padding-top: 10px;
+                    margin-bottom: 20px;
+
+                    div {
+                        margin-left: 10px;
+                    }
+
+                    p {
+                        height: 20px;
+                        line-height: 20px;
+
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+
+                    display: flex;
+
+                }
+            }
+
+        }
+
+    }
+}

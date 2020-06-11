@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册</title>
     <!-- 引入bootstrap -->
-    <link rel="stylesheet" href="../lib/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap4/css/bootstrap.min.css">
     <!-- 引入重置样式 -->
-    <link rel="stylesheet" href="../dist/css/reset.min.css">
+    <link rel="stylesheet" href="./dist/css/reset.min.css">
     <!-- 引入公共样式 -->
-    <link rel="stylesheet" href="../dist/css/common.min.css">
+    <link rel="stylesheet" href="./dist/css/common.min.css">
     <!-- 引入网页样式 -->
-    <link rel="stylesheet" href="../dist/css/register.min.css">
+    <link rel="stylesheet" href="./dist/css/register.min.css">
 </head>
 
 <body>
@@ -61,19 +61,28 @@
         <div>
             <div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1" class=" f16">用户名</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autofocus>
+                    <label for="username" class=" f16">用户名</label>
+                    <input type="text" class="form-control" id="username" autofocus>
+                    <span></span>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1" class=" f16">密码</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label for="pwd" class=" f16">密码</label>
+                    <input type="password" class="form-control" id="pwd">
+                    <span></span>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1" class="f16">确认密码</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
+                  <label for="email" class=" f16">邮箱</label>
+                  <input type="email" class="form-control" id="email">
+                  <span></span>
+              </div>
+              <div class="form-group">
+                <label for="nickname" class=" f16">昵称</label>
+                <input type="text" class="form-control" id="nickname">
+                <span></span>
+            </div>
+               
                 <div class="buttond">
-                    <button type="button" class="btn btn-primary">同意协议并注册</button>
+                    <button type="button" class="btn btn-primary" id="butn">同意协议并注册</button>
                     <p>
                         <a href="#">&lt;&lt;使用协议书&gt;&gt;</a>
                         <a href="./sign.html">已有账号,马上登录</a>
@@ -145,8 +154,8 @@
 </body>
 
 </html>
-<script src="../lib/jquery/jquery.min.js"></script>
-<script src="../lib/bootstrap4/js/bootstrap.min.js"></script>
-<script src="../lib/echarts/echarts.min.js"></script>
-<script src="../lib/popper/popper.min.js"></script>
-<script src="../dist/js/register.min.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./lib/bootstrap4/js/bootstrap.min.js"></script>
+<script src="./lib/echarts/echarts.min.js"></script>
+<script src="./lib/popper/popper.min.js"></script>
+<script src="./dist/js/register.min.js"></script>
