@@ -1,0 +1,68 @@
+// 轮播
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.lun div {
+    height: 400px;
+}
+
+.lun img {
+    height: 100%;
+    width: 100%;
+}
+
+
+// 招聘
+.look {
+    background: #F5F5F5;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    .we {
+        display: flex;
+        font-size: 18px;
+        margin-top: 30px;
+
+        p {
+            margin-left: 10px
+        }
+    }
+    .load{
+        display: flex;
+        justify-content: space-between;
+        .loa {
+        margin-top: 30px;
+        width: 265px;
+        height: 360px;
+       
+
+        &:hover {
+            .trsan {
+
+                transform: translateY(-130px);
+            }
+        }
+
+        .trsan {
+            padding: 5px 20px;
+            transition: all 0.7s;
+            background: #fff;
+
+            h1 {
+                height: 90px;
+                line-height: 90px;
+                font-size: 20px;
+                font-weight: bolder;
+                text-align: center;
+                cursor: pointer;
+            }
+           p{
+               font-size: 14px;
+           }
+        }
+    }
+    }
+    
+}
