@@ -19,7 +19,7 @@ $(function () {
         var uval = $(this).val();
         var span = $(this).next();
 
-        if (/^[a-zA-Z0-9_-]{4,16}$/.test(uval)) { //合法的
+        if ( /^([a-zA-Z0-9\u4e00-\u9fa5\·]{1,10})$/.test(uval)) { //合法的
             //    检查注册重复性
 
             $.ajax({

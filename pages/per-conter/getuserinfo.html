@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../dist/css/rename.min.css">
+<link rel="stylesheet" href="../../dist/css/getuserinfo.min.css">
 
 <div class="finor-right active">
     <div class="finortop">
@@ -6,21 +6,21 @@
             <img src="./images/www.jpg" alt="">
         </div>
         <div>
-            <p>昵 称：飞天猫</p>
-            <p>用户名：王坤</p>
-            <p>最后登录时间：2020-1-25 16:28:20
+            <p> <span>昵 称：</span><span id="nickname"></span> </p>
+            <p> <span>用户名：</span> <span  id="username"></span> </p>
+            <p> <span>最后登录时间:</span> <span id="lastlogintime"></span>
             </p>
         </div>
     </div>
     <div class="finorcenter">
         <div class="finc">
-            <p>总金额:<span>500000</span></p>
-            <p>可用金额: <span>400000</span> </p>
-            <p>冻结金额:<span>10000</span> </p>
+            <p>总金额:<span id="totalmoney"></span></p>
+            <p>可用金额: <span id="usablemoney"></span> </p>
+            <p>冻结金额:  <span id="blockedmoney"></span></p>
         </div>
         <div class="finb">
-            <p>账户充值</p>
-            <p>账户体现</p>
+            <p><a href="../../recharge.html">账户充值</a> </p>
+            <p> <a href="#">账户体现</a> </p>
         </div>
     </div>
     <div class="finorbut">
@@ -73,3 +73,4 @@
 
     </div>
 </div>
+<script src="../../dist/js/getuserinfo.min.js"></script>
