@@ -16,9 +16,9 @@ $(function(){
             },
             type:"POST",
             success:function(data){
-                if(data==="ok"&&chargemoney>100){
+                if(data =="ok" && chargemoney>100){
                     alert("恭喜您,充值成功！");
-                    location.href="/#per-conter";
+                    location.href="/#per-conter/getuserinfo";
                 }else{
                     alert("充值失败，请稍后再试~~~");
                     location.href="/recharge.html"

@@ -19,8 +19,24 @@ $(function () {
         if (!(localStorage.getItem('pid') && sessionStorage.getItem('borrowid'))) {
             alert('请先登录!!')
             location.href = "./sign.html"
-
-        }
+             }
+            
+             var borr = $('#borrowmoney').text();
+            
+             
+             var own = $('#ownmoney').text();
+             var boo = borr-own;
+            
+             
+             var cha = $('#chargemoney').val();
+             if(cha*1 > boo*1){
+                 alert("超出投资额度,请选择其他用户!!")
+                 location.href="/index.html"
+                 return false
+                 
+             }else{
+                
+             }
         // 投资
         var chargemoney = $('#chargemoney').val();
         if (!chargemoney) return false
@@ -34,22 +50,9 @@ $(function () {
             },
 
             success: function (data) {
-
-               // var char = localStorage.setItem(' chargemoney', chargemoney)
-                // 获取缺少的值
-
-
-
-                // var ba = localStorage.getItem('borrowmoney')
-                // var bb = localStorage.getItem(' chargemoney')
-                // console.log(bb);
-
-
-
-                // if (ba > bb) {
-                //     alert("请投资其他客户")
-                //     chargemoney ==0
-                //     }return false
+                
+               
+              
                  if (data == '10001') {
                     alert("余额不足,请充值!!")
                 } else if (data == "ok") {

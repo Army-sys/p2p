@@ -29,7 +29,7 @@ $(function(){
                 // id
                 localStorage.setItem("pid",res)
                 // 弹出
-                alert(username+"恭喜你注册成功!!!!")
+                alert(username+"恭喜你登录成功!!!!")
                 location.href="/#"
              }
            },
