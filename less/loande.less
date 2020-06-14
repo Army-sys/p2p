@@ -1,0 +1,252 @@
+// 导航栏
+.navbar {
+    background: #000000;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #ffffff;
+    white-space: nowrap;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    a {
+        color: #ffffff;
+        font-size: 16px;
+        white-space: nowrap;
+
+        &:hover {
+            color: #f60
+        }
+    }
+
+    >div {
+        ul {
+            display: flex;
+            flex-direction: row;
+            white-space: nowrap;
+        }
+
+    }
+}
+
+// logo
+nav {
+    background: #F8F8F8;
+    box-sizing: border-box;
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+
+        white-space: nowrap;
+
+
+        .lid {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            white-space: nowrap;
+
+            a {
+                line-height: 60px;
+                color: #000;
+                font-size: 16px;
+                cursor: pointer;
+
+                &.active {
+                    color: #f60;
+                    background: #cccccc;
+                }
+
+            }
+        }
+    }
+}
+
+
+// 借款人
+.el-userhead {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0px auto;
+
+}
+
+
+// 借款信息
+.compe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.muted {
+    color: #999;
+}
+
+.text-info {
+    color: #09d;
+}
+
+.load {
+
+    font-size: 16px;
+
+    img {
+        border-radius: 50px;
+        border: 2px solid #ccc;
+
+    }
+
+    .panel-heading {
+        background: #ccc;
+        height: 40px;
+        line-height: 40px;
+        text-indent: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    #butt {
+        margin-top: 20px;
+        margin-left: -10px;
+        button {
+            border: 1px solid #ccc;
+            width: 80px;
+            height: 30px;
+            background: rgb(16, 13, 182);
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+// 尾部
+.push {
+    background: #333333;
+    color: #fff;
+
+    justify-content: space-around;
+
+    .pusd {
+        display: flex;
+        justify-content: space-between;
+
+        // 左边
+        .pule {
+            display: flex;
+            flex: 3;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 16px;
+
+        }
+
+        //  中间
+        .puco {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px 50px;
+
+
+            p {
+                font-size: 16px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center
+            }
+
+            .pucod {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                .pucole {
+                    text-align: center;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+
+                }
+            }
+
+            .pucori {
+                text-align: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+
+        //    右边
+        .puri {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+
+
+        }
+
+
+
+    }
+
+}
+
+// 底部商标
+footer {
+    height: 100px;
+    background: #292929;
+    display: flex;
+    align-items: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+
+        .d1 {
+            height: 50px;
+            width: 114px;
+            background: url(../../images/jl.png) no-repeat;
+            background-position: 7px -58px;
+        }
+
+        .d2 {
+            height: 48px;
+            width: 110px;
+            background: url(../../images/jl.png) no-repeat;
+            background-position: 8px -106px;
+        }
+
+        .d3 {
+            height: 46px;
+            width: 110px;
+            background: url(../../images/jl.png) no-repeat;
+            background-position: 7px -152px;
+        }
+
+        .d4 {
+            height: 50px;
+            width: 100px;
+            background: url(../../images/jl.png) no-repeat;
+            background-position: -106px -58px;
+        }
+    }
+
+}

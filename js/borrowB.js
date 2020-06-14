@@ -20,13 +20,23 @@ $(function () {
     //    提交按钮点击事件
 
     $('#borrowApplyBtn').click(function () {
+        // var username = localStorage.getItem("username"),
+         var borrowmoney = $("#borrowmoney").val()
+        // var interest = $("#interest").val(),
+        // var borrowtime = $("#borrowtime").val(),
+        // var repaytype = $('input[type="radio"]:checked').val(),
+        // var minbid = $("#minbid").val(),
+        // var bouns = $("#bouns").val(),
+        // var days = $("#days").val(),
+        // var title = $("#title").val(),
+        // var info = $("#info").val()
         // 调用ajax接口
         $.ajax({
             url: "http://127.0.0.1:8848/borrow.php",
             type: "POST",
             data: {
                 acc: localStorage.getItem("username"),
-                borrowmoney: $("#borrowmoney").val(),
+                borrowmoney: borrowmoney,
                 interest: $("#interest").val(),
                 borrowtime: $("#borrowtime").val(),
                 repaytype: $('input[type="radio"]:checked').val(),
@@ -37,7 +47,7 @@ $(function () {
                 info: $("#info").val()
             },
             success:function(res){
-               
+              // localStorage.setItem('borrowmoney',borrowmoney)
                 
                 if(res == "ok"){
                     alert("提交成功,请等待消息!")
